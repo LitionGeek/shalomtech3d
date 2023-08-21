@@ -50,4 +50,4 @@ _Mis Acciones._
 
 ![Opciones de symbolos](https://ibb.co/nPVSwXQ)
 
-![Gracifo de accion](https://ibb.co/sJj2t3Y)
+![Gracifo de accion](https://pasteboard.co/RRRM4BftlXnp.png)
