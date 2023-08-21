@@ -18,7 +18,8 @@
 
 ## Configuración de la API
 
-Para acceder a los datos de seguimiento de acciones, configura la API en el archivo `src/api.js` siguiendo las instrucciones detalladas en la documentación de la API.
+Para acceder a los datos de seguimiento de acciones, crear un archivo .env , y agregar el token de la api
+VITE_REACT_API=TOKEN
 
 ## Tecnologías Utilizadas
 
