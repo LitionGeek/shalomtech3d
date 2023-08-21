@@ -13,8 +13,7 @@ export const actionSlice = createSlice({
       state.action = action.payload;
     },
     setActions: (state, { payload }) => {
-      console.log({ oldctions: state.actions, payload });
-      state.actions = [...state.actions, payload];
+      state.actions = state.actions.concat(payload);
     },
   },
 });

@@ -1,5 +1,5 @@
 export const intervals = [
-  { label: "1 minuto", value: 0, minutes: 1, interval: "1min" },
+  { label: "1 minuto", value: 0, minutes: 1, timeInMillis: 123, interval: "1min" },
   { label: "5 minutos", value: 1, minutes: 5, interval: "5min" },
   { label: "15 minutos", value: 2, minutes: 15, interval: "15min" },
   { label: "30 minutos", value: 3, minutes: 30, interval: "30min" },

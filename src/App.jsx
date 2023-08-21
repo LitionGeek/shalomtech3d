@@ -5,7 +5,6 @@ import { Authenticated } from "../src/routes";
 import { PrivateRoutes, PublicRoutes } from "../src/models/routes.js";
 import { RoutesNotFound } from "../src/utils";
 import "./App.css";
-
 function App() {
   return (
     <BrowserRouter>

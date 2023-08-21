@@ -24,6 +24,7 @@ const CoinInfo = () => {
   const params = new URLSearchParams(location.search);
   let symbol = params.get("symbol");
   let optionChart = createOptions(symbol);
+  
   const getAction = async () => {
     const res = await fetchAction(symbol);
     let createlabel = res?.values?.map((coin) => {

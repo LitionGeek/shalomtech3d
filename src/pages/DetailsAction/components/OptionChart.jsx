@@ -34,7 +34,6 @@ const OptionChart = () => {
           <Select
             label="Intervalo de tiempo"
             onChange={(e) => handleChange("interval", e)}
-            onClick={handleChange}
             defaultValue=""
             name={"interval"}
             value={config.interval}

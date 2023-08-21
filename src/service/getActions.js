@@ -27,18 +27,18 @@ export const getData = async (searchTerm) => {
   }
 };
 export const fetchAction = async (symbol) => {
-  let apiKey = "2f120b309ec743f9a492dc886a5674ea";
   let url;
-
   let getConfig = sessionStorage.getItem("configChart") ? JSON.parse(sessionStorage.getItem("configChart")) : "";
   if (getConfig.option === "historic") {
-    url = `https://api.twelvedata.com/time_series?start_date=2020-01-0&end_date=2021-01-01&outputsize=5&symbol=${symbol}&interval=${
-      intervals[getConfig.interval].interval
-    }&apikey=${apiKey}`;
+    url = `https://api.twelvedata.com/time_series?start_date=${getConfig.start_date}&end_date=${
+      getConfig.end_date
+    }&outputsize=5&symbol=${symbol}&interval=${intervals[getConfig.interval].interval}&apikey=${
+      import.meta.env.VITE_REACT_API
+    }`;
   } else {
     url = `https://api.twelvedata.com/time_series?symbol=${symbol}&interval=${
       intervals[getConfig.interval].interval
-    }&apikey=${apiKey}`;
+    }&apikey=${import.meta.env.VITE_REACT_API}`;
   }
 
   return await fetch(url)

@@ -36,7 +36,7 @@ export default function MisAcciones() {
   const [selfActions, responseSelf] = useGetAllMutation();
   const actions = useSelector(getActions);
   const dispatch = useDispatch();
-  console.log("Actions", actions);
+
   useEffect(() => {
     const getActions = async () => {
       await selfActions();
@@ -63,7 +63,8 @@ export default function MisAcciones() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {actions[0]?.map((row, index) => (
+          {actions.lenght === 0 && <StyledTableRow>No hay datos</StyledTableRow>}
+          {actions?.map((row, index) => (
             <StyledTableRow key={index}>
               <StyledTableCell component="th" scope="row">
                 <a href={`/details?symbol=${row.symbol}&currency=${row.currency}`}>{row.symbol}</a>
@@ -75,7 +76,6 @@ export default function MisAcciones() {
               </StyledTableCell>
             </StyledTableRow>
           ))}
-          {!actions && <StyledTableRow>No hay datos</StyledTableRow>}
         </TableBody>
       </Table>
     </TableContainer>
