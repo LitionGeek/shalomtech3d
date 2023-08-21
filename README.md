@@ -7,7 +7,7 @@
 
 ## Instrucciones de Instalación
 
-1. **Clona el Repositorio**: `git clone https://github.com/tuusuario/tu-app-de-seguimiento.git`
+1. **Clona el Repositorio**: `git clone https://github.com/LitionGeek/challengeReact`
 2. **Dirígete al Directorio**: `cd tu-app-de-seguimiento`
 3. **Instala las Dependencias**: `yarn`
 
@@ -40,13 +40,13 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 ## Capturas de Pantalla
 
 ![Página de Inicio](https://ibb.co/0M36Yrr)
-*Página de inicio de la aplicación.*
+_Página de inicio de la aplicación._
 
 ![Página de Inicio - Error de login](https://ibb.co/1M3VmMy)
-*Página de inicio de la aplicación. Con usuario inexistente*
+_Página de inicio de la aplicación. Con usuario inexistente_
 
 ![MisAcciones](https://ibb.co/cFw6wDK)
-*Mis Acciones.*
+_Mis Acciones._
 
 ![Opciones de symbolos](https://ibb.co/nPVSwXQ)
 
