@@ -11,12 +11,15 @@ export default function HeaderVista2(props) {
     <Container component="main" maxWidth="lg">
       <br />
       <Grid container spacing={2} className="encabezadoHeader">
-        <Grid item xs={12} md={4} className="volver">
+        {/* <Grid item xs={12} md={4} className="volver">
           {props.start}
+        </Grid> */}
+        <Grid item xs={12} md={12} className="titulo">
+          {props.titulo}
         </Grid>
-        <Grid item xs={12} md={4} className="botones">
+        {/* <Grid item xs={12} md={4} className="botones">
           {props.end}
-        </Grid>
+        </Grid> */}
       </Grid>
       <Grid container spacing={2}>
         <Grid item xs={12}>

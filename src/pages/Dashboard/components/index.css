@@ -1,0 +1,22 @@
+.moving-image {
+  animation: moveAndDisappear 5s linear infinite;
+}
+
+@keyframes moveAndDisappear {
+  0% {
+    transform: translateX(-30%); /* Empieza fuera del contenedor a la izquierda */
+    opacity: 0; /* Comienza invisible */
+  }
+  20% {
+    transform: translateX(0); /* Se desplaza al centro */
+    opacity: 1; /* Aparece */
+  }
+  80% {
+    transform: translateX(80%); /* Se desplaza a la derecha */
+    opacity: 1; /* Permanece visible */
+  }
+  100% {
+    transform: translateX(100%); /* Desaparece fuera del contenedor a la derecha */
+    opacity: 0; /* Desaparece */
+  }
+}
