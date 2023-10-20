@@ -2,7 +2,7 @@
   "name": "desafio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "litiongeek.github.io/shalomtech3d",
+  "homepage": "https://litiongeek.github.io/shalomtech3d",
   "type": "module",
   "scripts": {
     "dev": "vite",
