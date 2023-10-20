@@ -13,6 +13,8 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import person from "../assets/images/person.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome/index";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
 const pages = ["Productos", "Nosotros", "Preguntas", "Contacto"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -120,7 +122,9 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-
+          <Box sx={{ flexGrow: 0, width: "100px" }}>
+            <FontAwesomeIcon icon={faCartPlus} size="xl" />
+          </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

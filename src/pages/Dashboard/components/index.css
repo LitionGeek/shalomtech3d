@@ -4,7 +4,7 @@
 
 @keyframes moveAndDisappear {
   0% {
-    transform: translateX(-30%); /* Empieza fuera del contenedor a la izquierda */
+    transform: translateX(-100%); /* Empieza fuera del contenedor a la izquierda */
     opacity: 0; /* Comienza invisible */
   }
   20% {
